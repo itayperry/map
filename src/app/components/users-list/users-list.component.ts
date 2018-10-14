@@ -16,28 +16,12 @@ export class UsersListComponent implements OnInit {
 	public users = [];
 	public centerPoint = {
 		 name: "New York",
-		 location {
+		 location: {
 		 	lat: 40.730610,
 		 	lng: -73.935242
 		 }
 	};
-	 public people: any[] = [
-    {
-      "name": "Douglas  Pace"
-    },
-    {
-      "name": "Mcleod  Mueller"
-    },
-    {
-      "name": "Day  Meyers"
-    },
-    {
-      "name": "Aguirre  Ellis"
-    },
-    {
-      "name": "Cook  Tyson"
-    }
-  ];
+
   constructor(private usersService: UsersService) {}
 	ngOnInit() {
 		this.subscription = this.usersService.getAllUsers()

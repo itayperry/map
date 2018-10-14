@@ -12,7 +12,7 @@ export class UserComponent implements OnInit {
 	subscription: Subscription;
 public centerPoint = {
 	 name: "New York",
-	 location {
+	 location: {
 	 	lat: 40.730610,
 	 	lng: -73.935242
 	 }
