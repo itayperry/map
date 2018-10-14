@@ -1,0 +1,21 @@
+.name_design {
+	color: #ffbf00;
+}
+
+button {
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 14px;
+    color: #008cff;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #00000054;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    transition: all 0.4s;
+    outline: none;
+}
+
+button:hover {
+	background-color: white;
+}

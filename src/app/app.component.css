@@ -1,0 +1,17 @@
+#wrapper {
+	width: 100%;
+	display: flex;
+	background-color: #aadaff;
+}
+app-users-list {
+	width: 22%;
+	background-color: #2d2627;
+	height: 90vh;
+	border: 5px solid #aadaff;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+app-map {
+	width: 78%;
+}

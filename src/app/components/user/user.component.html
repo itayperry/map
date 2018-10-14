@@ -1,0 +1,5 @@
+<p> id: {{ user.id }} - <span class="name_design">{{ user.name }}</span></p>
+<p>Distance from {{ centerPoint.name }}: {{ user.distance }} km</p>
+<button type="button" (click)="callMethod(
+{geoCoordinates: {lat: user.location.latitude, lng: user.location.longitude}, zoomChoice: 8}
+)">Find {{user.name}}</button><!-- call method from map component -->

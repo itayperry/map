@@ -1,0 +1,18 @@
+<div id="container" class="scrollbar scroll-style">
+	<div id="headline-container">
+		<h3>A list of users from the closest to the furthest in relation to:</h3>
+		<p>{{ centerPoint.name }}</p>
+		<button (click)="callMethod({geoCoordinates: this.centerPoint.location, zoomChoice: 8})">Click to find {{ centerPoint.name }}</button>
+	</div>
+	<div id="list-by-distance">
+<!-- 		<section *ngFor="let user of users">	
+			<p> id: {{ user.id }} - <span class="name_design">{{ user.name }}</span></p>
+			<p>Distance from {{ centerPoint.name }}: {{ user.distance }} km</p>
+			<button type="button" (click)="callMethod(
+			{geoCoordinates: {lat: user.location.latitude, lng: user.location.longitude}, zoomChoice: 8}
+			)">Find {{user.name}}</button> call method from map component -->
+<!-- 		</section> -->
+		<app-user *ngFor="let user of users" [user]="user">	</app-user>
+	</div>
+</div>
+ <!-- *ngFor="let user in users" [users]="users" -->
