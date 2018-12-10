@@ -19,13 +19,13 @@ export class UsersService {
   		this.sendAllUsers();
     }
 
-	// Observable string streams
-	componentMethodCalled$ = this.componentMethodCallSource.asObservable();
+	  // Observable string streams
+	  componentMethodCalled$ = this.componentMethodCallSource.asObservable();
 
-	// Service message commands
-	callComponentMethod(data) {
-	  this.componentMethodCallSource.next(data)
-	}
+	  // Service message commands
+	  callComponentMethod(data) {
+	    this.componentMethodCallSource.next(data)
+    }
 
     getAllUsersObs(): Observable<any> {
     	return this.http.get<any>(this.allUsersUrl);
